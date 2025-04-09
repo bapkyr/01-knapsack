@@ -24,7 +24,8 @@ class KnapsackInstance:
 
     @staticmethod
     def load_instance_data(instance_name: str) -> str:
-        return ''
+        with open("/test_instances/" + instance_name, "r") as file:
+            return file.read()
 
     @staticmethod
     def test_instance() -> str:
